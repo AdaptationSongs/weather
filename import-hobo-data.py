@@ -1,12 +1,13 @@
 #!/usr/bin/python
-#
-# Tool to parse temperature and humidity data from Onset HOBO loggers.
-# Output is stored in the specified database.
-#
-# arguments: [database URI] [CSV file]
-#
-# Copyright (c) Damian Christey
-# License: GPL
+"""
+Tool to parse temperature and humidity data from Onset HOBO loggers.
+Output is stored in the specified database.
+
+Arguments: [database URI] [CSV file]
+
+Copyright (c) Damian Christey
+License: GPL
+"""
 
 import sys
 import csv
@@ -98,4 +99,4 @@ finally:
     print('Imported rows: {0}'.format(imported))
     print('Nondata rows skipped: {0}'.format(nondata))
     print('Existing records skipped: {0}'.format(existing))
-    print "Time elapsed: {0} seconds".format(time() - t)
+    print('Time elapsed: {0} seconds'.format(time() - t))
