@@ -6,6 +6,7 @@ Parses temperature and humidity data downloaded from Onset HOBO loggers and impo
 
 ### Requirements
 * [SQLAlchemy](https://www.sqlalchemy.org/)
+* [hobo-py](https://github.com/nationalparkservice/hobo-py)
 
 ### Usage
 `./import-hobo-data.py [database URI] [CSV file]`
